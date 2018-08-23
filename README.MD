@@ -6,7 +6,7 @@
 
 ## 安装
 
-1. 在releases页https://github.com/crucialize/fuckgxb/releases中下载
+1. 在releases页(https://github.com/crucialize/fuckgxb/releases)中下载
 2. 解压，获得一个文件夹
 3. 下载Chrome浏览器，官网：https://www.google.cn/chrome/index.html
 4. 打开Chrome，输入：chrome://extensions/
