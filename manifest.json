@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "gxb mooc ass-istant",
+    "description": "97#",
+    "version": "1.0.0",
+    "permissions": [
+        "tabs",
+        "https://*.gaoxiaobang.com/*",
+        "webRequest", 
+        "webRequestBlocking"
+    ],
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://*.gaoxiaobang.com/*"],
+          "js": ["watch.js"]
+        }
+      ]
+}
