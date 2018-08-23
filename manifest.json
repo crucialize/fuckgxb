@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "gxb mooc ass-istant",
     "description": "97#",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "permissions": [
         "tabs",
         "https://*.gaoxiaobang.com/*",
