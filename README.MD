@@ -3,7 +3,7 @@
 ## 说明
 
 - 现版本1.1.0只能辅助完成视频观看
-- 答案请在releases页 https://github.com/crucialize/fuckgxb/releases 下载，文件名：ans.xlsx
+- 答案请在 https://github.com/crucialize/fuckgxb/releases/tag/v1.1.0 下载，文件名：ans.xlsx
 
 ## 安装
 
