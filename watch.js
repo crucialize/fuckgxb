@@ -5,11 +5,15 @@
  * 坑4：所有的对document的改变只能通过appendChild。innerHTML+=会有很多奇怪的错误。
  */
 
-let scriptElement=document.createElement('script')
+let scriptElement = document.createElement('script')
 
-scriptElement.innerHTML=`
+scriptElement.innerHTML = `
 
 setInterval(function() {
+
+    window.addEventListener('ended', function (event) {
+        event.stopPropagation();
+    }, true);
 
     try {
 
@@ -52,8 +56,8 @@ document.body.appendChild(scriptElement)
 
 //add button
 
-let btnElem=document.createElement('div')
-btnElem.innerHTML=`
+let btnElem = document.createElement('div')
+btnElem.innerHTML = `
 
 <div style="z-index:6324;position:absolute;top:0;left:0;">
 <button onclick="func97()">下一个视频</button>
@@ -61,3 +65,10 @@ btnElem.innerHTML=`
 
 `
 document.body.appendChild(btnElem)
+
+//close when 100%
+setInterval(() => {
+    if (document.title == "100%") {
+        window.close()
+    }
+}, 1000)
