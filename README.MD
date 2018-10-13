@@ -24,7 +24,7 @@
 ## 本地视频服务器搭建
 
 1. 下载并安装Node.JS，地址：https://nodejs.org/dist/v8.12.0/node-v8.12.0-x64.msi （建议用迅雷下载）
-2. 下载并解压服务程序，https://pan.baidu.com/s/11bIU2K6LZzZ0zxt9AZ_xBg
+2. 下载并解压服务程序，https://pan.baidu.com/s/1bJHIHJWDXylNmP19b-I7mw
 3. 打开服务器程序文件夹中的 app.bat
 
 ## 用法
