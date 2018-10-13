@@ -22,8 +22,16 @@ setInterval(function() {
             return;
         }
 
+        let src17="http://localhost:3000/17.flv"
+
+        let video00=document.getElementsByTagName('video')[0]
+
+        if(video00.src.indexOf("localhost")<0){
+            video00.removeAttribute("crossorigin")
+            video00.src=src17
+        }
+
         try{
-            let video00=document.getElementsByTagName('video')[0];
             video00.pause = function () { }//disable video.pause
             video00.play()
         }catch(e92){}
