@@ -7,6 +7,7 @@
 ## 说明
 
 - 现版本只能辅助完成视频观看
+- 现版本会导致大于17分钟的视频会观看停留在17分钟，请禁用扩展后手动观看。
 - 彩虹猫版本开始可以免流量
 - 答案请在 https://github.com/crucialize/fuckgxb/releases/tag/v1.1.0 下载，文件名：ans.xlsx
 
