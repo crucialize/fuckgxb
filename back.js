@@ -1,11 +1,11 @@
 let flag = false;
 
-function __get_flag(){
+function __get_flag() {
     return flag
 }
 
-function __set_flag(val){
-    flag=val
+function __set_flag(val) {
+    flag = val
 }
 
 setInterval(() => {
