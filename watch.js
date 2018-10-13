@@ -65,10 +65,3 @@ btnElem.innerHTML = `
 
 `
 document.body.appendChild(btnElem)
-
-//close when 100%
-setInterval(() => {
-    if (document.title == "100%") {
-        window.close()
-    }
-}, 1000)
