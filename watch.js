@@ -11,13 +11,14 @@ scriptElement.innerHTML = `
 
 setInterval(function() {
 
+    //防止跳转
     window.addEventListener('ended', function (event) {
         event.stopPropagation();
     }, true);
 
     try {
 
-        //ensure it is video page && video loaded
+        //ensure it is video page
         if(document.getElementsByTagName('video').length==0){
             return;
         }
@@ -26,8 +27,11 @@ setInterval(function() {
 
         let video00=document.getElementsByTagName('video')[0]
 
+        if(video00.hasAttribute('crossorigin')){
+            video00.removeAttribute('crossorigin')
+        }
+
         if(video00.src.indexOf("localhost")<0){
-            video00.removeAttribute("crossorigin")
             video00.src=src17
         }
 
@@ -43,6 +47,11 @@ setInterval(function() {
         console.log(e82)
     }
 }, 1000)
+
+//close shit dialog
+setInterval(()=>{
+    $(".gxb-dialog-close").click()
+},200)
 
 ///
 
