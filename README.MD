@@ -1,11 +1,16 @@
 # 高校邦mooc助手
 
+2018-10-13发布：fuckgxb-彩虹猫版
+
+![](./cat.jpg)
+
 ## 说明
 
 - 现版本只能辅助完成视频观看
+- 彩虹猫版本开始可以免流量
 - 答案请在 https://github.com/crucialize/fuckgxb/releases/tag/v1.1.0 下载，文件名：ans.xlsx
 
-## 安装
+## chrome扩展安装
 
 1. 在releases页 https://github.com/crucialize/fuckgxb/releases 中下载
 2. 解压，获得一个文件夹
@@ -14,6 +19,12 @@
 5. 启用右上角的“开发者模式”
 6. 将第2步获得的文件夹拖入
 7. 无视浏览器的任何警告
+
+## 本地视频服务器搭建
+
+1. 下载并安装Node.JS，地址：https://nodejs.org/dist/v8.12.0/node-v8.12.0-x64.msi （建议用迅雷下载）
+2. 下载并解压服务程序，https://pan.baidu.com/s/11bIU2K6LZzZ0zxt9AZ_xBg
+3. 打开服务器程序文件夹中的 app.bat
 
 ## 用法
 
@@ -25,4 +36,4 @@
 ## 注意
 
 - 获得的文件夹不能移动、改名、删除！！！
-- 视频播放开始后，你才能点击“下一个视频”
+- 视频播放开始后，你才能点击“下一个视频”，有时过多的视频同时播放会导致新的网页中的视频打开失败。
