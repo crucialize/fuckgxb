@@ -17,7 +17,6 @@ $(document).ready(() => {
         chrome.tabs.query({ active: true }, function (tab) {
     
             var pageUrl = tab[0].url;
-            console.log(pageUrl)
             if (pageUrl.indexOf("#!state=chapter&chapterId=") > 0) {
                 $("#next").attr("disabled", false);
             }
