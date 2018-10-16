@@ -18,7 +18,7 @@ setInterval(function() {
 
     try {
 
-        //ensure it is video page
+        //ensure has video
         if(document.getElementsByTagName('video').length==0){
             return;
         }
@@ -53,32 +53,6 @@ setInterval(()=>{
     $(".gxb-dialog-close").click()
 },200)
 
-///
-
-buttonAdded=true
-
-function func97(){
-    let url00=document.URL
-    url00=url00.substring(0,url00.indexOf("#"))
-    let strNum00=url00.substring(url00.lastIndexOf('/')+1)
-    let Num00=parseInt(strNum00)
-    let strNum01=(Num00+1).toString()
-    let url01=url00.replace(strNum00,strNum01)
-    window.open(url01)
-}
-
 `
 
 document.body.appendChild(scriptElement)
-
-//add button
-
-let btnElem = document.createElement('div')
-btnElem.innerHTML = `
-
-<div style="z-index:6324;position:absolute;top:0;left:0;">
-<button onclick="func97()">下一个视频</button>
-</div>
-
-`
-document.body.appendChild(btnElem)
