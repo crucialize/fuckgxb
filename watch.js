@@ -40,8 +40,7 @@ setInterval(function() {
             video00.play()
         }catch(e92){}
         
-        let progress=$('.video-percent').text()
-        $('title').text(progress+"%")
+        $('title').text((video00.currentTime/video00.duration).toString())
         
     } catch(e82){
         console.log(e82)

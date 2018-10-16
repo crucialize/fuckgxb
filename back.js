@@ -13,13 +13,14 @@ setInterval(() => {
     chrome.windows.getAll({ populate: true }, function (windows) {
         windows.forEach(function (window) {
             window.tabs.forEach(function (tab) {
-
-                if (tab.title == "100%") {
-                    if (flag)
-                        chrome.tabs.remove(tab.id)
-                }
+                try {
+                    if (parseFloat(tab.title) > 0.95) {
+                        if (flag)
+                            chrome.tabs.remove(tab.id)
+                    }
+                } catch (exc) { }
             });
         });
     });
 
-}, 1000)
+}, 500)
