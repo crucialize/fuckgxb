@@ -23,7 +23,7 @@ setInterval(function() {
             return;
         }
 
-        let src17="http://localhost:3000/17.flv"
+        let src17="http://localhost:3000"
 
         let video00=document.getElementsByTagName('video')[0]
 
@@ -46,7 +46,7 @@ setInterval(function() {
     } catch(e82){
         console.log(e82)
     }
-}, 1000)
+}, 200)
 
 //close shit dialog
 setInterval(()=>{
