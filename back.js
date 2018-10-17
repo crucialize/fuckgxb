@@ -14,7 +14,7 @@ setInterval(() => {
         windows.forEach(function (window) {
             window.tabs.forEach(function (tab) {
                 try {
-                    if (parseFloat(tab.title) > 0.95) {
+                    if (parseFloat(tab.title) > 0.97) {
                         if (flag)
                             chrome.tabs.remove(tab.id)
                     }
